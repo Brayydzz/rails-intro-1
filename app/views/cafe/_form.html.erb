@@ -1,0 +1,7 @@
+<%= form_with model: @item do |f| %>
+    <%= f.text_field :name, placeholder: "Item Name" %>
+    <%= f.number_field :price, step: "0.01", placeholder: "price" %>
+    <%= f.number_field :qty, placeholder: "Qty on hand"%>
+
+    <%= f.submit %>
+<% end %>

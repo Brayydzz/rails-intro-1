@@ -3,10 +3,14 @@
 <table>
     <tr>
         <td>Name</td>
-        <td><%= @item[:name] %></td>
+        <td><%= @item.name %></td>
     </tr>
     <tr>
         <td>Price</td>
-        <td><%= @item[:price] %></td>
+        <td><%= "#{@currency_symbol}%.2f" % @item.price %></td>
     </tr>
 </table>
+
+<p>
+    <%= link_to " << Back to menu", root_path %>
+</p>
